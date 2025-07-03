@@ -1,2 +1,2 @@
-REDIS_HOST: redis.subbuaws.site
-MONGODB_HOST: mongodb.subbuaws.site
+REDIS_HOST: redis-{{ env }}.subbuaws.site
+MONGODB_HOST: mongodb-{{ env }}.subbuaws.site
