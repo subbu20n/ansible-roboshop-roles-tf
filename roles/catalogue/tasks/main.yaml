@@ -16,7 +16,7 @@
 - name: install mongodb client
   ansible.builtin.dnf:
     name: mongodb-mongosh
-    state: present
+    state: present 
 
 - name: check products loaded or not
   ansible.builtin.command: mongosh --host {{ MONGODB_HOST }} --eval 'db.getMongo().getDBNames().indexOf("catalogue")'
@@ -41,9 +41,3 @@
     name: common
     tasks_from: systemd.yaml 
 
-- name: deployment 
-  tags: 
-  - deployment 
-  import_role: 
-     name: common
-     tasks_from: deployment  
