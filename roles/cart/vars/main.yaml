@@ -1,2 +1,2 @@
 CATALOGUE_HOST: catalogue.backend-{{ env }}.subbuaws.site
-REDIS_HOST: redis-{{ env }}.subbuaws.site
+REDIS_HOST: redis-{{ env }}.subbuaws.site  

@@ -53,7 +53,7 @@ http {
         location /api/shipping/ { proxy_pass http://{{ SHIPPING_HOST }}/; }
         location /api/payment/ { proxy_pass http://{{ PAYMENT_HOST }}/; }
 
-        location /health {
+        location /health {  
           stub_status on;
           access_log off;
         }
